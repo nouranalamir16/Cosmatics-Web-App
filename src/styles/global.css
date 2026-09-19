@@ -1,0 +1,179 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Marcellus&display=swap");
+
+:root {
+  --nouran-cream: #fbf7f2;
+  --nouran-beige: #eaded3;
+  --nouran-rose: #c9968a;
+  --nouran-dark-rose: #9d665d;
+  --nouran-brown: #302522;
+  --nouran-soft-brown: #6e5a54;
+  --nouran-white: #ffffff;
+
+  --font-display: "Marcellus", serif;
+  --font-body: "Jost", sans-serif;
+
+  --transition-fast: 0.25s ease;
+  --transition-normal: 0.45s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  background: var(--nouran-cream);
+  color: var(--nouran-brown);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: var(--font-body);
+}
+
+button {
+  border: 0;
+  outline: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background: var(--nouran-rose);
+  color: var(--nouran-white);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nouran-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nouran-beige);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nouran-rose);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.section-subtitle {
+  max-width: 600px;
+  margin: 15px auto 0;
+  color: var(--nouran-soft-brown);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.nouran-container {
+  width: min(1200px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+  .nouran-container {
+    width: min(100% - 28px, 1200px);
+  }
+}
+
+.nouran-toast {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 260px;
+  padding: 14px 18px;
+
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(157, 102, 93, 0.2);
+
+  box-shadow: 0 18px 45px rgba(48, 37, 34, 0.14);
+
+  color: var(--nouran-brown);
+
+  animation: nouranToastIn 0.45s
+    cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.toast-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: var(--nouran-dark-rose);
+  color: white;
+}
+
+.toast-icon i {
+  font-size: 0.9rem;
+}
+
+.nouran-toast span {
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+@keyframes nouranToastIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  .nouran-toast {
+    right: 14px;
+    bottom: 14px;
+    left: 14px;
+    min-width: auto;
+  }
+}

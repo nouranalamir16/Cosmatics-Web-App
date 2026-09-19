@@ -1,0 +1,106 @@
+.order-success-page {
+  min-height: 100vh;
+  padding: 150px 0 90px;
+  display: flex;
+  align-items: center;
+}
+
+.order-success-content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.order-success-icon {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--nouran-dark-rose);
+  border-radius: 50%;
+  color: var(--nouran-dark-rose);
+  font-size: 2rem;
+}
+
+.order-success-label {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--nouran-dark-rose);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.order-success-content h1 {
+  margin-bottom: 18px;
+  font-family: var(--font-display);
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.order-success-content p {
+  max-width: 500px;
+  margin: 0 auto 35px;
+  color: var(--nouran-soft-brown);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.order-success-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.order-success-primary,
+.order-success-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 14px 24px;
+  font-size: 0.78rem;
+  transition: all var(--transition-fast);
+}
+
+.order-success-primary {
+  background: var(--nouran-dark-rose);
+  color: var(--nouran-white);
+}
+
+.order-success-primary:hover {
+  background: var(--nouran-brown);
+  color: var(--nouran-white);
+  transform: translateY(-2px);
+}
+
+.order-success-secondary {
+  border: 1px solid rgba(48, 37, 34, 0.18);
+  color: var(--nouran-brown);
+}
+
+.order-success-secondary:hover {
+  border-color: var(--nouran-dark-rose);
+  color: var(--nouran-dark-rose);
+}
+
+@media (max-width: 576px) {
+  .order-success-page {
+    padding: 120px 0 60px;
+  }
+
+  .order-success-actions {
+    flex-direction: column;
+  }
+
+  .order-success-primary,
+  .order-success-secondary {
+    width: 100%;
+  }
+}

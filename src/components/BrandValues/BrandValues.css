@@ -1,0 +1,150 @@
+.brand-values-section {
+  padding: 120px 0;
+  background: var(--nouran-cream);
+}
+
+.brand-values-heading {
+  max-width: 700px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.brand-values-eyebrow {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: var(--nouran-dark-rose);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+}
+
+.brand-values-heading .section-title em {
+  color: var(--nouran-dark-rose);
+  font-style: italic;
+}
+
+.brand-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.brand-value-card {
+  position: relative;
+  min-height: 310px;
+  padding: 30px;
+  background: var(--nouran-white);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.brand-value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(48, 37, 34, 0.08);
+}
+
+.brand-value-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.brand-value-number {
+  color: var(--nouran-rose);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.brand-value-icon {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid var(--nouran-beige);
+  border-radius: 50%;
+  color: var(--nouran-dark-rose);
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease;
+}
+
+.brand-value-card:hover .brand-value-icon {
+  background: var(--nouran-cream);
+  transform: rotate(8deg);
+}
+
+.brand-value-icon i {
+  font-size: 1.05rem;
+}
+
+.brand-value-content {
+  margin-top: 65px;
+}
+
+.brand-value-content h3 {
+  margin: 0 0 15px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.brand-value-content p {
+  max-width: 330px;
+  margin: 0;
+  color: var(--nouran-soft-brown);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.brand-value-line {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  height: 1px;
+  background: var(--nouran-beige);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .brand-values-section {
+    padding: 90px 0;
+  }
+
+  .brand-values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-value-card {
+    min-height: 260px;
+  }
+
+  .brand-value-content {
+    margin-top: 45px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+  .brand-values-section {
+    padding: 75px 0;
+  }
+
+  .brand-values-heading {
+    margin-bottom: 45px;
+  }
+
+  .brand-value-card {
+    min-height: 270px;
+    padding: 24px;
+  }
+
+  .brand-value-line {
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+  }
+}

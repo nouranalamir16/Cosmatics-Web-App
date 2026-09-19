@@ -1,0 +1,221 @@
+.login-page {
+  min-height: 100vh;
+  padding: 150px 20px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(201, 150, 138, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(234, 222, 211, 0.5),
+      transparent 30%
+    ),
+    var(--nouran-cream);
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 480px;
+}
+
+.login-brand {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.login-brand span {
+  display: block;
+  color: var(--nouran-brown);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+}
+
+.login-brand p {
+  margin: 5px 0 0;
+  color: var(--nouran-soft-brown);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+}
+
+.login-card {
+  padding: 50px;
+  background: var(--nouran-white);
+  box-shadow: 0 25px 70px rgba(48, 37, 34, 0.08);
+}
+
+.login-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.login-header > span {
+  color: var(--nouran-dark-rose);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.login-header h1 {
+  margin: 10px 0;
+  color: var(--nouran-brown);
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.login-header p {
+  margin: 0;
+  color: var(--nouran-soft-brown);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.login-field {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.login-field label {
+  color: var(--nouran-brown);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid rgba(48, 37, 34, 0.15);
+  outline: none;
+  background: var(--nouran-cream);
+  color: var(--nouran-brown);
+  font-size: 0.9rem;
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.login-field input::placeholder {
+  color: rgba(110, 90, 84, 0.6);
+}
+
+.login-field input:focus {
+  border-color: var(--nouran-rose);
+  box-shadow: 0 0 0 3px rgba(201, 150, 138, 0.12);
+}
+
+.login-label-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.login-label-row button {
+  padding: 0;
+  background: transparent;
+  color: var(--nouran-dark-rose);
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.login-label-row button:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: var(--nouran-brown);
+  color: var(--nouran-white);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.login-button:hover {
+  background: var(--nouran-dark-rose);
+  transform: translateY(-2px);
+}
+
+.login-divider {
+  position: relative;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.login-divider::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: rgba(48, 37, 34, 0.1);
+}
+
+.login-divider span {
+  position: relative;
+  z-index: 1;
+  padding: 0 15px;
+  background: var(--nouran-white);
+  color: var(--nouran-soft-brown);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+}
+
+.register-text {
+  margin: 0;
+  text-align: center;
+  color: var(--nouran-soft-brown);
+  font-size: 0.85rem;
+}
+
+.register-text a {
+  color: var(--nouran-dark-rose);
+  font-weight: 600;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .login-page {
+    padding: 120px 15px 70px;
+  }
+
+  .login-card {
+    padding: 35px 22px;
+  }
+
+  .login-header h1 {
+    font-size: 2.1rem;
+  }
+}
+.login-error {
+  margin: -5px 0 0;
+  padding: 10px 12px;
+  background: rgba(157, 102, 93, 0.08);
+  color: var(--nouran-dark-rose);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,155 @@
+.not-found-page {
+  position: relative;
+
+  min-height: calc(100vh - 90px);
+
+  display: grid;
+  place-items: center;
+
+  padding: 100px 20px;
+
+  overflow: hidden;
+
+  background: var(--nouran-cream);
+
+  text-align: center;
+}
+
+.not-found-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+.not-found-number {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--nouran-beige);
+
+  font-family: var(--font-display);
+  font-size: clamp(7rem, 20vw, 13rem);
+  line-height: 0.8;
+}
+
+.not-found-eyebrow {
+  display: block;
+
+  margin-bottom: 22px;
+
+  color: var(--nouran-dark-rose);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.not-found-content h1 {
+  margin-bottom: 20px;
+
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.not-found-content h1 em {
+  color: var(--nouran-dark-rose);
+  font-style: italic;
+}
+
+.not-found-content p {
+  max-width: 500px;
+
+  margin: 0 auto 32px;
+
+  color: var(--nouran-soft-brown);
+
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.not-found-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 15px 24px;
+
+  background: var(--nouran-brown);
+  color: var(--nouran-white);
+
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.not-found-button:hover {
+  background: var(--nouran-dark-rose);
+  color: var(--nouran-white);
+  transform: translateY(-2px);
+}
+
+.not-found-button i {
+  transition: transform 0.3s ease;
+}
+
+.not-found-button:hover i {
+  transform: translateX(4px);
+}
+
+.not-found-orbit {
+  position: absolute;
+
+  border: 1px solid rgba(157, 102, 93, 0.12);
+
+  border-radius: 50%;
+}
+
+.not-found-orbit-one {
+  width: 500px;
+  height: 500px;
+
+  top: -180px;
+  right: -100px;
+}
+
+.not-found-orbit-two {
+  width: 380px;
+  height: 380px;
+
+  bottom: -170px;
+  left: -100px;
+}
+
+@media (max-width: 576px) {
+  .not-found-page {
+    min-height: calc(100vh - 70px);
+    padding: 70px 20px;
+  }
+
+  .not-found-number {
+    font-size: 8rem;
+  }
+
+  .not-found-content p {
+    font-size: 0.88rem;
+  }
+
+  .not-found-orbit-one {
+    width: 300px;
+    height: 300px;
+  }
+
+  .not-found-orbit-two {
+    width: 250px;
+    height: 250px;
+  }
+}

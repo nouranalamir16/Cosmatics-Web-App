@@ -1,0 +1,318 @@
+.account-page {
+  min-height: 100vh;
+  padding: 150px 0 100px;
+  background: var(--nouran-cream);
+}
+
+.account-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.account-header > span {
+  color: var(--nouran-dark-rose);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.account-header .section-title {
+  margin-top: 10px;
+}
+
+.account-header p {
+  max-width: 550px;
+  margin: 18px auto 0;
+  color: var(--nouran-soft-brown);
+  line-height: 1.8;
+}
+
+.account-card {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 45px;
+  background: var(--nouran-white);
+  box-shadow: 0 25px 70px rgba(48, 37, 34, 0.07);
+}
+
+.account-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--nouran-beige);
+  color: var(--nouran-dark-rose);
+  font-size: 1.8rem;
+}
+
+.account-info {
+  text-align: center;
+}
+
+.account-info > span {
+  color: var(--nouran-dark-rose);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+}
+
+.account-info h2 {
+  margin: 10px 0 5px;
+  color: var(--nouran-brown);
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.account-info p {
+  margin: 0;
+  color: var(--nouran-soft-brown);
+  font-size: 0.9rem;
+}
+
+.account-links {
+  margin-top: 40px;
+  border-top: 1px solid rgba(48, 37, 34, 0.1);
+}
+.account-logout {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 25px 1fr 20px;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px 5px;
+
+  border: 0;
+  border-bottom: 1px solid rgba(48, 37, 34, 0.1);
+
+  background: transparent;
+  color: var(--nouran-brown);
+
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  text-align: left;
+
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.account-logout:hover {
+  padding-left: 12px;
+  color: var(--nouran-dark-rose);
+}
+
+.account-logout i:first-child {
+  color: var(--nouran-dark-rose);
+}
+
+.account-logout i:last-child {
+  text-align: right;
+  transition: transform var(--transition-fast);
+}
+
+.account-logout:hover i:last-child {
+  transform: translateX(4px);
+}
+.account-links a {
+  display: grid;
+  grid-template-columns: 25px 1fr 20px;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 5px;
+  border-bottom: 1px solid rgba(48, 37, 34, 0.1);
+  color: var(--nouran-brown);
+  font-size: 0.85rem;
+  transition: all var(--transition-fast);
+}
+
+.account-links a:hover {
+  padding-left: 12px;
+  color: var(--nouran-dark-rose);
+}
+
+.account-links a i:first-child {
+  color: var(--nouran-dark-rose);
+}
+
+.account-links a i:last-child {
+  text-align: right;
+  transition: transform var(--transition-fast);
+}
+
+.account-links a:hover i:last-child {
+  transform: translateX(4px);
+}
+
+@media (max-width: 576px) {
+  .account-page {
+    padding: 120px 0 70px;
+  }
+
+  .account-card {
+    padding: 35px 22px;
+  }
+
+  .account-info h2 {
+    font-size: 1.7rem;
+  }
+}
+.order-history {
+  margin-top: 70px;
+  padding-bottom: 80px;
+}
+
+.order-history-header {
+  margin-bottom: 30px;
+}
+
+.order-history-header > span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--nouran-soft-brown);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.orders-empty {
+  padding: 60px 25px;
+  border: 1px solid rgba(48, 37, 34, 0.1);
+  background: var(--nouran-white);
+  text-align: center;
+}
+
+.orders-empty > i {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 2.2rem;
+  color: var(--nouran-rose);
+}
+
+.orders-empty h3 {
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.orders-empty p {
+  margin-bottom: 20px;
+  color: var(--nouran-soft-brown);
+}
+
+.orders-empty a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background: var(--nouran-dark-rose);
+  color: var(--nouran-white);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.orders-list {
+  display: grid;
+  gap: 22px;
+}
+
+.order-card {
+  padding: 28px;
+  border: 1px solid rgba(48, 37, 34, 0.1);
+  background: var(--nouran-white);
+}
+
+.order-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(48, 37, 34, 0.08);
+}
+
+.order-card-top span,
+.order-card-info span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--nouran-soft-brown);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+}
+
+.order-card-top h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.order-status {
+  padding: 7px 12px;
+  background: rgba(157, 102, 93, 0.1);
+  color: var(--nouran-dark-rose);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.order-card-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 22px 0;
+}
+
+.order-card-info strong {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.order-products {
+  display: grid;
+  gap: 12px;
+}
+
+.order-product {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.order-product img {
+  width: 58px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.order-product h4 {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.order-product span {
+  color: var(--nouran-soft-brown);
+  font-size: 0.72rem;
+}
+
+@media (max-width: 576px) {
+  .order-card {
+    padding: 20px;
+  }
+
+  .order-card-info {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .order-card-top {
+    flex-direction: column;
+  }
+}
