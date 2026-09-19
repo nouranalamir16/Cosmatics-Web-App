@@ -93,7 +93,7 @@ function App() {
         <ProductProvider>
           <CartProvider>
           <WishlistProvider>
-            <BrowserRouter>
+            <BrowserRouter basename="/Cosmatics-Web-App">
               <Navbar />
 
 <Routes>
