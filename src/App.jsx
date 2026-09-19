@@ -96,29 +96,21 @@ function App() {
             <BrowserRouter>
               <Navbar />
 
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/shop" element={<Shop />} />
-                <Route path="/product/:id" element={<ProductDetails />} />
-                <Route path="/cart" element={<Cart />} />
-                <Route path="/checkout" element={<Checkout />} />
-                <Route path="/wishlist" element={<Wishlist />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                
-                
-                <Route path="/account" element={<Account />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-              </Routes>
-
-              <Routes>
-                <Route
-                  path="/order-success"
-                  element={<OrderSuccess />}
-                />
-                <Route path="*" element={<NotFound />} />
-              </Routes>
+<Routes>
+  <Route path="/" element={<Home />} />
+  <Route path="/shop" element={<Shop />} />
+  <Route path="/product/:id" element={<ProductDetails />} />
+  <Route path="/cart" element={<Cart />} />
+  <Route path="/checkout" element={<Checkout />} />
+  <Route path="/wishlist" element={<Wishlist />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/contact" element={<Contact />} />
+  <Route path="/account" element={<Account />} />
+  <Route path="/login" element={<Login />} />
+  <Route path="/register" element={<Register />} />
+  <Route path="/order-success" element={<OrderSuccess />} />
+  <Route path="*" element={<NotFound />} />
+</Routes>
               <Footer />
             </BrowserRouter>
           </WishlistProvider>
