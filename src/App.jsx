@@ -93,7 +93,7 @@ function App() {
         <ProductProvider>
           <CartProvider>
           <WishlistProvider>
-            <BrowserRouter basename="/Cosmatics-Web-App">
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
               <Navbar />
 
 <Routes>
